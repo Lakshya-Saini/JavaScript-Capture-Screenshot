@@ -1,0 +1,60 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capture Picture with JavaScript</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid px-0">
+      <div class="row mx-0 mt-3">
+        <div class="col-md-12">
+          <!-- Capture Picture -->
+          <div class="card">
+            <div class="card-body">
+              <h3 class="text-title text-center">Capture your Picture</h3>
+              <div class="row mx-0">
+                <div class="col-md-6 text-center mt-4">
+                  <div class="camera">
+                    <video id="video">Video Stream not available</video>
+                  </div>
+                </div>
+                <div class="col-md-6 text-center mt-4">
+                  <div class="output">
+                    <img alt="Picture will appear here" id="picture" />
+                  </div>
+                </div>
+                <div class="col-md-12 text-center">
+                  <div>
+                    <button
+                      class="btn btn-primary shadow-none text-white my-4"
+                      id="takePictureBtn"
+                    >
+                      Take Picture
+                    </button>
+                    <button
+                      class="btn btn-secondary shadow-none text-white my-4 ml-3"
+                      id="clearPictureBtn"
+                    >
+                      Clear
+                    </button>
+                    <button
+                      class="btn btn-success shadow-none text-white my-4 ml-3"
+                      id="downloadPictureBtn"
+                    >
+                      Download Picture
+                    </button>
+                  </div>
+                  <canvas id="canvas"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/capture_picture.js"></script>
+  </body>
+</html>
